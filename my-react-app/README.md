@@ -86,5 +86,9 @@ The requirements for this challenge are the exact same requirements of the Front
 --- 
 # How to run
 ...
+
 https://i.imgflip.com/30h3rh.png
+npm run json:server:remote
+
+npm start
 
