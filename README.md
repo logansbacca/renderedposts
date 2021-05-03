@@ -86,6 +86,7 @@ The requirements for this challenge are the exact same requirements of the Front
 --- 
 # How to run
 ...
-
+server:
 npm run json:server:remote
+react app:
 npm start 
