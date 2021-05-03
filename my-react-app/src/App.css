@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{  
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.comment{
+    display:block
+}
+
+
+.navbar{
+    display:flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    color:white;
+    letter-spacing: 3px;
+    padding:20px;
+    width:100%
+}
+
+.text1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.send-post{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header{
+    text-align: center;
+}
+
+.header label{
+    display: inline-block;
+    padding: 10px 50px 0px 40px;
+    font-size: medium;
+    letter-spacing: 3px;
+
+}
+
+.header input, textarea{
+    border: 2px solid #a2aab0 ;
+    border-radius: 4px;
+}
+
+.header button {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    background:black ;
+    border:none;
+    color:white;
+    cursor:pointer;
+
+
+
+}
+
+.header button:hover {
+    background:#008080;
+    transition:all 0.3s ease;
+}
+
+.content-input{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:600px;
+    margin:30px;
+    height:400px;
+    box-shadow: 0px 5px 20px rgb(71,71,71);
+    background: #DDECEF;
+  
+}
+
+@media screen and (max-width: 480px) {
+    .post-input {
+      width:100%;
+      font-size: 12px;
+      text-align:left;
+    }
+
+    .post-input h1,h2{
+        max-width: 50%;
+        font-size: 15px;
+        
+      }
+  }
+
+.post-input h1,h2{
+    width:80%;
+    
+}
+
+.post-input  h1{
+    color:red;
+}
+
+
+.edit-options{
+    display:flex;
+    justify-content:center;
+    padding:10px 0px 15px 0px;
+}
+
+.edit-options button {
+    text-decoration: none;
+    padding: 5px 13px;
+    outline: none;
+    border:none;
+    border-radius: 4px;
+    margin-left: 3px;
+    cursor:pointer;
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+
+}
+
+.buttons button{
+
+    text-decoration: none;
+    padding: 5px 13px;
+    outline: none;
+    border-radius: 4px;
+    border:none;
+    cursor:pointer;
+
+}
+
+.first{
+   color:white;
+   background: #ff6961;
+   margin-right:2px;
+}
+
+.second{
+    color:white;
+    background:#77dd77;
+    margin-left:2px;
+
+}
+
+.main-comments h3{
+    display:flex;
+    justify-content: center;
+    margin-top: px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+.bundle{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+   
+    
+}
+
+.comment{
+    display:flex;
+    justify-content: center;
+
+}
+
+.comment button{
+    text-decoration: none;
+    padding: 12px 20px;
+    outline: none;
+    border-radius: 4px;
+    background:black ;
+    border:none;
+    cursor:pointer;
+    color:white;
+
+}
+
+.comment button:hover {
+    background:#008080;
+    transition:all 0.3s ease;
+}
