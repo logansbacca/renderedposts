@@ -22,7 +22,6 @@ useEffect(() => {
   })
 },[]);
 
-
     return (
       <div className="main-comments">
         <h3>Comments</h3>
