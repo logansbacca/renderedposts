@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import axios from 'axios'
 
-const Comment = ({body,refresh}) => {
+const Comment = ({body}) => {
 
     const [comment, setComment] = useState({
         body: "",
@@ -42,16 +42,6 @@ const submitComment = (e) => {
           </div>
         </section>
         </form>
-
-
-
-
-
-
-
-
-
-
 
         </div>
     )

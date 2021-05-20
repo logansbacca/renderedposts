@@ -5,7 +5,7 @@ import axios from 'axios'
 const CommentForm = () => {
 
 const [comments, setComments] = useState([])
-const [commentLimit] = useState(1)
+const [commentLimit] = useState(3)
 const [currentComment] = useState(1);
 
 const startIndex = currentComment * commentLimit - commentLimit;
@@ -28,7 +28,8 @@ useEffect(() => {
         <h3>Comments</h3>
         <section className="bundle">
           {cut.map(c => (
-          <Comment body={c.body} />))}
+          <p>{c.body}</p>))}
+          <Comment/>
         </section>
 
       </div>
