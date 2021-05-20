@@ -1,20 +1,19 @@
 import React, { useState,useEffect } from 'react';
 import './App.css';
 import Nav from './components/Nav'
-import Post from './components/ModifyPost';
+import Pagination from './components/pagination';
 import {AddPost} from './components/AddPost';
 import axios from 'axios';
-
 
 const App = () =>{
   const [posts, setPosts] = useState([]);
   const refresh = () =>{
-  console.log("i'm refreshing");
-  axios.get('http://localhost:3000/posts/').then (res => {
+    console.log("i'm refreshing");
+    axios.get('http://localhost:3000/posts/').then (res => {
       setPosts(res.data.reverse());
       console.log("Posts rendered");
     });
-  }
+  };
 
   useEffect(() => {
     axios.get('http://localhost:3000/posts/').then (res => {
@@ -30,10 +29,7 @@ const App = () =>{
     <div className="App">
       <Nav/>
       <AddPost/>
-        {posts.map(p => (
-          <Post body = {p.body} title={p.title} id={p.id} refresh={refresh} />
-      ))}
-
+      <Pagination posts={posts} refresh={refresh} title="Posts"/>
     </div>
 
   );

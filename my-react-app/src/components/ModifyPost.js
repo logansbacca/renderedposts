@@ -49,7 +49,7 @@ const Post = ({body,title,id,refresh}) => {
         <section>
     <div className="main">
         <div className="post-input">
-        <h1 >{title}</h1>
+        <h1>{title}</h1>
         <h2>{body}</h2>
         </div>
         </div>
