@@ -12,7 +12,6 @@ function Pagination({ posts, title, refresh}) {
     //set the amount of posts per page
     let slice= posts.slice(endIndex,startIndex);
    
-
     //pagination
     const pageNumber= [];
     for(let i = 1; i<=Math.ceil(posts.length / dataLimit);i++){
